@@ -1,0 +1,29 @@
+<style>
+  .angular-google-map-container { height: 400px; }
+</style>
+<ion-view view-title="Mapa - Home">
+  <ion-nav-buttons side="right" >
+    <a class="button button-outline button-light  button-positive" 
+        ng-click="openDialogSave()">
+      Guardar ruta
+    </a>
+  </ion-nav-buttons>
+  <ion-content>
+  <div class="list">
+    <label class="item item-input">
+      <input type="text" placeholder="Ruta de partida" g-places-autocomplete
+             ng-model="routeInit" force-selection="true">
+    </label>
+    <label class="item item-input">
+      <input type="text" id="routeEnd" placeholder="Ruta destino"  g-places-autocomplete 
+            force-selection="true" ng-model="routeEnd">
+    </label>
+  </div>
+   <div class="list">
+    <ui-gmap-google-map center='map.center' zoom='map.zoom' control="map.control">
+      <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+      </ui-gmap-marker>
+    </ui-gmap-google-map>
+  </div>
+  </ion-content>
+</ion-view>

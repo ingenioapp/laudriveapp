@@ -1,0 +1,13 @@
+<ion-view view-title="Mis Rutas">
+  <ion-content>
+    <ion-list show-delete="false" can-swipe="enableDelete">
+      <ion-item ng-repeat="route in routes" ng-click="showRoute(route)">
+        S: {{route.departure.address}} <br/>
+        D: {{route.destination.address}}
+        <ion-option-button class="button-assertive" ng-click="delete(route, $index)">
+          Borrar
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

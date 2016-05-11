@@ -1,0 +1,44 @@
+<h1><code ng:non-bindable="">appRouteService:RouteService</code>
+<div><span class="hint"></span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="approuteservice-page approuteservice-routeservice-page"><p>Esta clase se conecta a los servicios expuestos en el servidor para relizar operaciones CRUD sobre las rutas.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_delete">delete(Ruta)</h3>
+<div class="delete"><div class="delete-page"><p>Elimina una ruta del sistema</p>
+</div><h5 id="methods_delete_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>Ruta</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="delete-page"><p>El id de la ruta a eliminar en formato json: {id:number}</p>
+</div></td></tr></tbody></table><h5 id="methods_delete_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="delete-page"><p>Promesa con la respuesta del servidor.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getall">getAll()</h3>
+<div class="getall"><div class="getall-page"><p>Recupera todas las rutas del sistema</p>
+</div><h5 id="methods_getall_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="getall-page"><p>Promesa con la respuesta del servidor.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getbyuser">getByUser(IdUser)</h3>
+<div class="getbyuser"><div class="getbyuser-page"><p>Recupera todas las rutas asociadas a un usuario</p>
+</div><h5 id="methods_getbyuser_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>IdUser</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="getbyuser-page"><p>El id del usuario</p>
+</div></td></tr></tbody></table><h5 id="methods_getbyuser_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="getbyuser-page"><p>Promesa con la respuesta del servidor.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_register">register(Ruta)</h3>
+<div class="register"><div class="register-page"><p>Envia lós datos al servidor para regitrar una nueva ruta</p>
+</div><h5 id="methods_register_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>Ruta</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="register-page"><p>La ruta a registrar con el siguiente formato json: {departure:{longitude:number, lalitude:number, address:&#39;string&#39;},
+destination:{longitude:number,latitude:number,address:string},
+user:id</p>
+</div></td></tr></tbody></table><h5 id="methods_register_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="register-page"><p>Promesa con la respuesta del servidor.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_update">update(Ruta)</h3>
+<div class="update"><div class="update-page"><p>Actualiza una ruta del sistema</p>
+</div><h5 id="methods_update_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>Ruta</td><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="update-page"><p>La ruta a modificar con el siguiente formato json: {departure:{longitude:number, lalitude:number, address:&#39;string&#39;},
+destination:{longitude:number,latitude:number,address:string},
+user:id</p>
+</div></td></tr></tbody></table><h5 id="methods_update_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">object</a></td><td><div class="update-page"><p>Promesa con la respuesta del servidor.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

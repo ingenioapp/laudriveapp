@@ -1,0 +1,13 @@
+{
+  "name": "LauDriveApp",
+  "app_id": "",
+  "gulpStartupTasks": [
+    "sass",
+    "watch",
+    "ngdocs"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

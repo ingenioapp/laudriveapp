@@ -1,0 +1,41 @@
+
+<ion-view view-title="Ingrese sus datos para acceder">
+	<div class="bar bar-header">
+		<h2 class="title">Trial LauDrive</h2>
+	</div>
+  	<ion-content>
+		<div class="row responsive-sm">
+			<div class="col">&nbsp;</div>
+		</div>
+		<form ng-submit="doAction()">
+			<div class="card">
+				<div class="button-bar">
+				<a class="button" ng-click="showLogin()" 
+					ng-class="{'button-calm':isLogin}" >Ingresa</a>
+				<a class="button" ng-click="showRegister()"
+					ng-class="{'button-calm':!isLogin}">Registrate</a>
+			</div>
+			<div class="list">
+				<label class="item item-input">
+					<span class="input-label">Email</span>
+					<input type="email" ng-model="loginData.email">
+				</label>
+				<label class="item item-input">
+					<span class="input-label">Password</span>
+					<input type="password" ng-model="loginData.password">
+				</label>
+				<label class="item item-input" ng-hide="isLogin">
+					<span class="input-label">R. Password</span>
+					<input type="password">
+				</label>
+				<label class="item">
+					<button class="button button-block button-positive" type="submit">
+						<span ng-show="isLogin">Ingresar</span>
+						<span ng-hide="isLogin">Registrar</span>
+					</button>
+				</label>
+			</div>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>
